@@ -67,7 +67,7 @@ RUN \
 ENV MODEL_VERSION 0.10
 RUN mkdir /opt/kaldi \
    && cd /opt/kaldi \
-   && whet -q http://alphacephei.com/vosk/models/vosk-model-ru-${MODEL_VERSION}.zip \
+   && wget -q http://alphacephei.com/vosk/models/vosk-model-ru-${MODEL_VERSION}.zip \
    && unzip vosk-model-ru-${MODEL_VERSION}.zip \
    && mv vosk-model-ru-${MODEL_VERSION} model \
    && rm -rf vosk-model-ru-${MODEL_VERSION}.zip
