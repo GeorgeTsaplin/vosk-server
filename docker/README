@@ -8,4 +8,4 @@ the service will be exposed on port 2700
 
 To run uniMRCP version try:
     
-    sudo docker run -p 1544:1544 -p 8060:8060 -p 5001-5200:5001-5200/udp -v /media/kaldi_models:/opt/kaldi/models georgetsaplin/vosk-server:latest
+    sudo docker run -p 1544:1544 -p 8060:8060 -p 5001-5200:5001-5200/udp -v /media/kaldi_models:/opt/kaldi/model georgetsaplin/vosk-server:latest
