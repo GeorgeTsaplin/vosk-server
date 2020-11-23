@@ -69,4 +69,4 @@ EXPOSE 8060
 EXPOSE 5001-5200
 
 WORKDIR /usr/local/unimrcp/bin
-CMD [ "./unimrcpserver", "-w" ]
+RUN chmod +x /usr/local/unimrcp/bin/unimrcpserver
