@@ -5,3 +5,7 @@ To run it in your environment simply try
     sudo docker run -p 2700:2700 alphacep/kaldi-ru:latest
 
 the service will be exposed on port 2700
+
+To run uniMRCP version try:
+    
+    sudo docker run -p 1544:1544 -p 8060:8060 -p 5001-5200:5001-5200/udp -v /media/kaldi_models:/opt/kaldi/models georgetsaplin/vosk-server:latest
